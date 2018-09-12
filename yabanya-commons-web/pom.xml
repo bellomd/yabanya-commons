@@ -19,8 +19,6 @@
         <swagger2.version>2.9.2</swagger2.version>
         <jaxb.version>2.3.0</jaxb.version>
         <jackson.version>2.9.6</jackson.version>
-        <javax.activation.version>1.2.0</javax.activation.version>
-        <jaxb-runtime.version>2.3.0.1</jaxb-runtime.version>
     </properties>
 
     <build>
@@ -67,24 +65,6 @@
             <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-jaxb-annotations</artifactId>
             <version>${jaxb.version}</version>
-        </dependency>
-
-
-
-        <!-- Jaxb Dependencies -->
-        <dependency>
-            <groupId>javax.xml.bind</groupId>
-            <artifactId>jaxb-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.activation</groupId>
-            <artifactId>javax.activation-api</artifactId>
-            <version>${javax.activation.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.jaxb</groupId>
-            <artifactId>jaxb-runtime</artifactId>
-            <version>${jaxb-runtime.version}</version>
         </dependency>
 
         <!-- Swagger2 Dependencies -->

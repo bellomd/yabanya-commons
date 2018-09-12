@@ -14,13 +14,15 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class Swagger2Config {
+	
+	private static final String SWAGGER_BASE_PACKAGE = "com.yabanya";
 
     @Bean
     public Docket docket() {
 
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage(getClass().getPackage().getName()))
+                .apis(RequestHandlerSelectors.basePackage(SWAGGER_BASE_PACKAGE))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(generateApiInfo());
